@@ -15,7 +15,9 @@ The project involves the following key steps:
 **5. Machine Learning Models:**
 
 **Linear SVM:** A Support Vector Machine model with a linear kernel is trained.
+
 **Naive Bayes:** A Gaussian Naive Bayes model is trained.
+
 **Logistic Regression:** A Logistic Regression model is trained.
 
 **6. Model Evaluation:** The models are evaluated based on their accuracy using the testing set.
