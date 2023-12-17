@@ -1,28 +1,13 @@
-# Sentiment Analysis with Machine Learning
-This repository contains a simple sentiment analysis project using machine learning. The goal is to classify reviews as positive or negative based on their content.
+# Sentiment Analysis with deep learning
+This repository contains a simple sentiment analysis project using deep learning. The goal is to classify reviews as positive or negative based on their content.
 
-### Project Overview
-The project involves the following key steps:
+## Overview
 
-**1. Data Loading:** 
-The sentiment analysis is performed on a dataset of book reviews. The dataset is loaded from a JSON file.
+In this project, i use an LSTM-based neural network to classify book reviews as either positive or negative based on the review's text and score.
 
-**2. Fair Distribution:** 
-To ensure a balanced dataset, reviews are evenly sampled from both positive and negative sentiments.
+## Implementation
 
-**3. Train-Test Split:** 
-The dataset is split into training and testing sets for model evaluation.
-
-**4. Text Vectorization:** 
-The text data is converted into numerical vectors using TF-IDF vectorization.
-
-**5. Machine Learning Models:**
-
-_**Linear SVM:** A Support Vector Machine model with a linear kernel is trained.
-
-_**Naive Bayes:** A Gaussian Naive Bayes model is trained.
-
-_**Logistic Regression:** A Logistic Regression model is trained.
-
-**6. Model Evaluation:** 
-The models are evaluated based on their accuracy using the testing set.
+1. Tokenization and Padding: The text data is tokenized using the Tokenizer from Keras and padded to ensure consistent input lengths.
+2. LSTM Model: An LSTM model is constructed using an Embedding layer followed by an LSTM layer and a Dense layer with sigmoid activation for binary classification.
+3. Training: The model is trained using the Adam optimizer and binary crossentropy as the loss function.
+4. Visualization: Training and validation loss and accuracy are visualized over epochs using matplotlib.
